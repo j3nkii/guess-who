@@ -1,6 +1,18 @@
 #folks{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
 
+}
+
+#onWin{
+    display: none;
+}
+
+.freeSpace{
+    height: 250px;
+    width: 250px;
+    background-color: black;
 }

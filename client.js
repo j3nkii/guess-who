@@ -26,6 +26,8 @@ function render(){
                 src="https://github.com/${randomPerson.githubUsername}.png?size=250" 
                 alt="Profile image of ${randomPerson.name}">
             </div>
+            <div class="freeSpace">
+            </div>
         `);
         //delete random index so no repeats
         let index = copycat.indexOf(randomPerson)
@@ -58,9 +60,10 @@ function randomCharacter(){
 
 function playerAttempt(){
     if($(this).data('name') === answer.name){
-        window.alert('you\'re a friggen genius');
-        playAgain()
-        //setTimeout(winningEvent, 2000)
+        $('#folks').empty();
+        $('#onWin').css("display", "initial")
+        
+        setTimeout(winningEvent, 1500)
     } else if($(this).data('name') !== answer.name){
         window.alert('Try Again')
     }
@@ -71,11 +74,16 @@ function playerAttempt(){
 function playAgain(){
     let anotherRound = window.confirm('Play again?')
     if(anotherRound){
+        $('#onWin').css("display", "none")
         randomCharacter()
-        $('#folks').empty();
         render()
     } else {
         window.alert('Your loss')
         $('html').remove()
     }
+}
+
+function winningEvent(){
+    window.alert('you\'re a friggen genius');
+    playAgain()
 }
