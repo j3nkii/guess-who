@@ -2,11 +2,11 @@
 
 You will be creating a pick-the-person game with HTML, CSS, and jQuery!
 
-## Update Your GitHub Profile Picture
+XXX## Update Your GitHub Profile Picture
 Before you get started writing code, please update your GitHub profile to include a picture of yourself. Feel free to add you and your group members to the `data.js` file -- follow the format!
 
-## Display Profile Pictures
-On document load, append divs for each person in the people array (it comes from `data.js` file) to the DOM with jQuery (not hardcoded), each containing an image from each GitHub profile (see the provided data.js file). As an example, the below HTML would produce Chris's GitHub profile picture where `christopher-black` is Chris's GitHub username and `250` is the size of the picture requested.
+XXX## Display Profile Pictures
+xOn document load, append divs for each person in the people array (it comes from `data.js` file) to the DOM with jQuery (not hardcoded), each containing an image from each GitHub profile (see the provided data.js file). As an example, the below HTML would produce Chris's GitHub profile picture where `christopher-black` is Chris's GitHub username and `250` is the size of the picture requested.
 
 ```HTML
 <img src="https://github.com/christopher-black.png?size=250" alt="Profile image of Chris">
@@ -29,11 +29,11 @@ function randomNumber(min, max){
 ## Game Logic
 
 - If the player clicks on the correct person
-    - give them a success message.
-    - Prompt the player to pick another person randomly and let them keep playing.
-- If they pick the wrong person
-    - give them an error message.
-    - allow them to try again.
+    - x give them a success message.
+    - xPrompt the player to pick another person randomly and let them keep playing.
+- xIf they pick the wrong person
+    - xgive them an error message.
+    - xallow them to try again.
 
 ![example.gif](example.gif)
 
